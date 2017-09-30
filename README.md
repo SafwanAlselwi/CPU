@@ -1,12 +1,19 @@
 # CPU
 CPU Scheduling Algorithms  
 By: Safwan Alselwi
-Demo at: https://www.youtube.com/watch?v=jAyHkWFTrXM
-Support me by subscribing to my youtube channel 
+-----------------------------------------------
+Support me by subscribing to my youtube channel
+https://www.youtube.com/watch?v=jAyHkWFTrXM
+-----------------------------------------------
+Executable file : https://goo.gl/Z6mKcV
+-----------------------------------------------
 
+Description of diffrent type of CPU Scheduling:
 ===================================================
 
+-----------------------------------------------
 First-Come-First-Served or FIFO Scheduling
+-----------------------------------------------
 The process that requests the CPU first is allocated the CPU first. The average waiting time for FCFS policy is often quite long.
 
 Example:
@@ -24,9 +31,10 @@ Waiting time for P1 = 0; P2 = 24; P3 = 27
 Ave. waiting time: (0 + 24 + 27) /3 = 17 ms.
 
 
-==============================================
 
-Shortest-Job-First Scheduling
+-----------------------------------------------
+Shortest-Job-First Scheduling:
+-----------------------------------------------
 Associate with each process the length of its next CPU burst. Use these lengths to schedule the process with the shortest time. 
 Two schemes:
 * Non-preemptive - once CPU is given to the process, it cannot be preempted until it completes its CPU burst.
@@ -59,8 +67,9 @@ Average waiting time is :
 ((10-1) + (1-1) + (17-2) + (5-3)) / 4 = 6.5 ms.
 
 
-=======================================
-
+-----------------------------------------------
+Round Robin Scheduling:
+-----------------------------------------------
 * Designed for time-sharing systems.
 * Similar to FCFS, with preemption added.
 * Each process gets a small unit of CPU time (a time slice), usually 10 - 100 milliseconds.
@@ -89,10 +98,9 @@ Performance of RR:
 * If q is very small, the RR approach is called   processor sharing. Overhead is too high.
 
 
-=================================================
-
-
+-----------------------------------------------
 Priority Scheduling :
+-----------------------------------------------
 * The SJF is a special case of the general priority scheduling algorithm.
 * A priority (an integer) is associated with each process.
 * The CPU is allocated to the process with the highest priority (smallest integer = highest priority).
@@ -116,4 +124,6 @@ The average waiting time is:
 * A major problem with priority scheduling algorithms is indefinite blocking or starvation. Low priority processes could wait indefinitely for the CPU.
 * A solution to the problem of starvation is aging. Aging is a technique of gradually increasing the priority of processes that wait in the system a long time.
 
-thank you
+-----------------------------------------------
+Thank you
+Saf1
